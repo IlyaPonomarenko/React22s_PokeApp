@@ -1,9 +1,16 @@
 import React from 'react';
-
+import Card from './Card';
+import "./PokeList.css"
 const PokeList = () => {
     return (
-        <div>
-            <h2>poke</h2>
+        <div className='row'>
+            <Card></Card>
+            <Card></Card>
+            <Card></Card>
+            <Card></Card>
+            <Card></Card>
+            <Card></Card>
+            <Card></Card>
         </div>
     );
 };
