@@ -1,14 +1,16 @@
 import React from "react";
 import "./Card.css";
-const Card = () => {
+const Card = (props) => {
   return (
     <div className="card">
-      <div class="card-icon">
-        <img src="" alt="pokemon.png" />
+      <div className="card-icon">
+        <img src={props.image} alt="pokemon.png" />
       </div>
-      <div class="card-text">
-        <h2>Name</h2>
-        <div class="icons">icon</div>
+      <div className="card-text">
+        <h2>{props.name}</h2>
+        <div className="icons">
+            {props.type}
+        </div>
       </div>
     </div>
   );
