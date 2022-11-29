@@ -8,8 +8,9 @@ class PokeSingle extends Component {
       };
       componentDidMount() {
         this.setState({ isLoading: true });
-        fetch(`https://pokeapi.co/api/v2/pokemon/nono${this.props.params.pokesingle}`)
-        .then(res => res.json()).then(data => this.setState({data:data, isLoading:false}))
+        fetch(`https://pokeapi.co/api/v2/pokemon/${this.props.params.pokesingle}`)
+        .then(res => res.json())
+        .then(res => this.setState({data:res, isLoading:false}))
       }
    render(){
     if (this.state.isLoading) {
