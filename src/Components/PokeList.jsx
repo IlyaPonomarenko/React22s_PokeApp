@@ -1,7 +1,7 @@
-import React from "react";
-import Card from "./Card";
-import { Component } from "react";
+import React,{ Component } from "react";
+import axios from "axios";
 
+import Card from "./Card";
 import "./PokeList.css";
 
 class PokeList extends Component {
